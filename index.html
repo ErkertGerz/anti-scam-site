@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Безопасность — проверка</title>
+    <link rel="stylesheet" href="style-trap.css">
+</head>
+<body>
+    <div class="trap-container">
+        <h1>🔒 Антимошенник</h1>
+        <p>Мы — студенческий проект, который поможет вам и вашим близким не попадаться на уловки мошенников в интернете и по телефону.</p>
+        <p>Нажмите на ссылку, чтобы начать обучение:</p>
+        <a href="#" id="trap-link" class="fake-link">tochno-ne-moshenniki.com/start</a>
+    </div>
+
+    <div id="warning-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-icon">⚠️</span>
+                <h2>ВНИМАНИЕ!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Вы только что хотели перейти по ссылке от незнакомого источника.</p>
+                <p><strong>НЕ ПЕРЕХОДИТЕ ПО ПОДОЗРИТЕЛЬНЫМ ССЫЛКАМ!</strong></p>
+                <p>Мошенники могут украсть ваши данные или установить вирус.</p>
+                <div class="modal-img">🎭</div>
+            </div>
+            <div class="modal-footer">
+                <button id="continue-btn">Дальше →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-trap.js"></script>
+</body>
+</html>
