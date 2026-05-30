@@ -3,128 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Антимошенник — защита от мошенников</title>
+    <title>Развод.Нет — защита от мошенников</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo">🛡️ Антимошенник</div>
+<div class="navbar">
+    <div class="logo">
+        <img src="images/Логотип.png" alt="Логотип" class="logo-img"> 
+        <span>Развод.Нет</span>
+    </div>
     <nav>
         <a href="#lessons">Уроки</a>
         <a href="#schemes">Схемы</a>
         <a href="#game">Игра</a>
-        <a href="#checklist">Чек-лист</a>
+        <a href="#protect">Защита</a>
         <a href="#news">Новости</a>
-        <a href="#test">Тест</a>
     </nav>
-</header>
+</div>
 
 <main>
-    <!-- Шапка (Hero) -->
+    <!-- Hero (увеличен в 1.7 раза) -->
     <section class="hero">
         <div class="hero-text">
-            <p class="hero-label">образовательный проект</p>
+            <p class="hero-tagline">Здесь вы научитесь распознавать уловки мошенников и узнаете известные схемы обманов</p>
             <h1>Не дай себя<br>обмануть</h1>
             <button class="hero-btn" id="game-scroll">Играть →</button>
         </div>
         <div class="hero-image">
-            <div class="thief-icon">🦹‍♂️</div>
+            <img src="images/Вор.png" alt="Вор" class="hero-img">
         </div>
     </section>
 
-    <!-- Блок: Уроки / Видео -->
+    <!-- Уроки (вертикальные карточки 9:16) -->
     <section id="lessons" class="section light">
-        <h2>Уроки безопасности</h2>
-        <p>Короткие видео по 2–3 минуты, которые научат главному.</p>
+        <h2 class="center-title">Уроки безопасности</h2>
+        <p class="section-desc center">Короткие видео, которые научат тебя основам безопасности и поведению при встрече с мошенником</p>
         <div class="cards">
-            <div class="card">📹 Схемы мошенников</div>
-            <div class="card">📹 Как распознать звонок</div>
-            <div class="card">📹 Что делать, если обманули</div>
-            <div class="card">📹 Защита пожилых родственников</div>
+            <div class="card">🎬 Схемы мошенников</div>
+            <div class="card">🎬 Как распознать звонок</div>
+            <div class="card">🎬 Что делать, если обманули</div>
+            <div class="card">🎬 Защита пожилых родственников</div>
         </div>
     </section>
 
-    <!-- Блок: Схемы (Что-то №1) -->
-    <section id="schemes" class="section dark">
-        <h2>Как это работает</h2>
-        <p>Самые популярные уловки — и как на них не попасться.</p>
-        <div class="schemes-grid">
-            <div class="scheme-item">📞 Звонок из «банка»</div>
-            <div class="scheme-item">🎁 «Вы выиграли приз»</div>
-            <div class="scheme-item">💬 Ссылка от «друга»</div>
-            <div class="scheme-item">📄 «Ваш полис заблокирован»</div>
-        </div>
-    </section>
-
-    <!-- Блок: Игра -->
-    <section id="game" class="section light">
-        <h2>Игра: не дай себя развести</h2>
-        <p>Поговори с мошенником в чате. Выбирай ответы — твоя задача не попасться.</p>
-        <div class="game-container">
-            <div class="game-chat">
-                <div class="chat-message bot">Здравствуйте! Ваша карта заблокирована. Назовите код из СМС.</div>
-                <div class="chat-options">
-                    <button class="chat-btn">Сказать код</button>
-                    <button class="chat-btn">Положить трубку</button>
-                    <button class="chat-btn">Уточнить имя сотрудника</button>
+    <!-- Схемы: декоративное изображение слева, текст + иконки справа -->
+    <section id="schemes" class="section light">
+        <h2 class="center-title">Как это работает?</h2>
+        <div class="schemes-layout">
+            <div class="schemes-decor">
+                <img src="images/Схемы.png" alt="Схемы">
+            </div>
+            <div class="schemes-list">
+                <div class="scheme-item">
+                    <img src="images/Phone.png" alt="иконка" class="scheme-icon-img">
+                    <div class="scheme-content">
+                        <h3>Звонок из «банка»</h3>
+                        <p>Вам звонят, представляются сотрудником службы безопасности. Говорят, что с карты пытаются списать деньги, и просят назвать код из СМС или перевести средства на «безопасный счёт». Никогда не делайте этого. Настоящий банк не просит коды и не переводит ваши деньги на другие счета.</p>
+                    </div>
+                </div>
+                <div class="scheme-item">
+                    <img src="images/Confetti.png" alt="иконка" class="scheme-icon-img">
+                    <div class="scheme-content">
+                        <h3>«Вы выиграли iPhone!»</h3>
+                        <p>Сообщение с выигрышем в конкурсе, в котором вы не участвовали. Чтобы получить приз, нужно оплатить «налог», «доставку» или «комиссию». Настоящие конкурсы не требуют предоплаты.</p>
+                    </div>
+                </div>
+                <div class="scheme-item">
+                    <img src="images/Link.png" alt="иконка" class="scheme-icon-img">
+                    <div class="scheme-content">
+                        <h3>Ссылка от «друга»</h3>
+                        <p>Вам пишут в мессенджере от лица знакомого (часто взломанный аккаунт) с просьбой перейти по ссылке или срочно перевести деньги. Позвоните этому человеку по телефону и переспросите.</p>
+                    </div>
+                </div>
+                <div class="scheme-item">
+                    <img src="images/Car.png" alt="иконка" class="scheme-icon-img">
+                    <div class="scheme-content">
+                        <h3>«Ваш полис ОМС заблокирован»</h3>
+                        <p>СМС или звонок из «пенсионного фонда» / «поликлиники». Просят назвать код из СМС или номер СНИЛС. Госорганы не решают такие вопросы по телефону.</p>
+                    </div>
                 </div>
             </div>
-            <div class="game-info">
-                <p>🎮 Выбери правильный вариант</p>
-                <p>✔️ Если ошибёшься — узнаешь, как не попасться в следующий раз</p>
+        </div>
+    </section>
+
+    <!-- Игра (без изменений) -->
+    <section id="game" class="section light">
+        <h2 class="center-title">Игра</h2>
+        <div class="game-layout">
+            <div class="game-large-card">
+                <div class="game-large-content">
+                    <h3>🎮 Нулевой урок</h3>
+                    <p>Попробуй свои силы в обучающем режиме</p>
+                    <button class="game-large-btn">Начать →</button>
+                </div>
+            </div>
+            <div class="game-small-grid">
+                <div class="game-small-card">Уровень 1 →</div>
+                <div class="game-small-card">Уровень 2 →</div>
+                <div class="game-small-card">Уровень 3 →</div>
+                <div class="game-small-card">Уровень 4 →</div>
+                <div class="game-small-card">Уровень 5 →</div>
+                <div class="game-small-card">Уровень 6 →</div>
             </div>
         </div>
-        <div class="game-levels">
-            <span class="level active">Уровень 1</span>
-            <span class="level">Уровень 2</span>
-            <span class="level">Уровень 3</span>
+    </section>
+
+    <!-- Защита: текст слева с иконками, изображение телефона справа -->
+    <section id="protect" class="section light">
+        <h2 class="center-title">Как себя защитить?</h2>
+        <div class="protect-layout">
+            <div class="protect-text">
+                <div class="protect-item">
+                    <img src="images/Key.png" alt="иконка" class="protect-icon-img">
+                    <div>
+                        <h3>Хранение информации</h3>
+                        <p>Никогда никому не сообщайте личные данные: код из СМС, ПИН-код и CVV карты, пароли от личных кабинетов.</p>
+                    </div>
+                </div>
+                <div class="protect-item">
+                    <img src="images/Box.png" alt="иконка" class="protect-icon-img">
+                    <div>
+                        <h3>Официальные платформы</h3>
+                        <p>Если звонит «банк» — положите трубку и перезвоните по номеру на официальном сайте.</p>
+                    </div>
+                </div>
+                <div class="protect-item">
+                    <img src="images/SMS.png" alt="иконка" class="protect-icon-img">
+                    <div>
+                        <h3>Перепроверка</h3>
+                        <p>Не переходите по ссылкам из подозрительных СМС и сообщений. Проверьте информацию через официальный сайт.</p>
+                    </div>
+                </div>
+                <div class="protect-item">
+                    <img src="images/Lock.png" alt="иконка" class="protect-icon-img">
+                    <div>
+                        <h3>Дополнительная защита</h3>
+                        <p>Включите двухфакторную аутентификацию везде, где это возможно. Это усложнит доступ мошенникам.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="protect-image">
+                <img src="images/Телефон.png" alt="Телефон с защитой">
+            </div>
         </div>
     </section>
 
-    <!-- Блок: Чек-лист (Что-то №2) -->
-    <section id="checklist" class="section dark">
-        <h2>Чек-лист: как защитить себя</h2>
-        <div class="checklist-grid">
-            <div class="checklist-item">✅ Никогда не называй код из СМС</div>
-            <div class="checklist-item">✅ Клади трубку, если звонят из «банка»</div>
-            <div class="checklist-item">✅ Не переходи по ссылкам из сообщений</div>
-            <div class="checklist-item">✅ Включи двухфакторную аутентификацию</div>
-            <div class="checklist-item">✅ Поговори с бабушками и дедушками</div>
-            <div class="checklist-item">✅ Проверяй информацию на официальных сайтах</div>
-        </div>
-        <div class="phone-illustration">📱🛡️</div>
-    </section>
-
-    <!-- Блок: Новости -->
+    <!-- Новости (блоки 5:3) -->
     <section id="news" class="section light">
-        <h2>Новости</h2>
-        <p>Последние обновления и новые схемы мошенников</p>
-        <div class="news-list">
-            <div class="news-item">🔴 Новая схема: звонки от имени «оператора сотовой связи»</div>
-            <div class="news-item">🟠 Мошенники подделывают сайты госуслуг — проверяйте адресную строку</div>
-            <div class="news-item">🟢 Как не попасться на «выигрыш в лотерею» — памятка внутри</div>
-        </div>
-    </section>
-
-    <!-- Блок: Тест (Что-то №3) -->
-    <section id="test" class="section dark">
-        <h2>Тест: как хорошо вы защищены?</h2>
-        <p>Ответьте на 3 вопроса и узнайте свою уязвимость</p>
-        <div class="test-container">
-            <div class="test-question">Вопрос 1: Вам звонят из «банка» и просят перевести деньги на безопасный счёт. Ваши действия?</div>
-            <button class="test-btn">Переведу</button>
-            <button class="test-btn">Положу трубку и перезвоню в банк</button>
-            <button class="test-btn">Скажу код из СМС для проверки</button>
+        <h2 class="center-title">Новости</h2>
+        <div class="news-grid">
+            <div class="news-card">📢 Новая схема: звонки от имени «оператора сотовой связи»</div>
+            <div class="news-card">⚠️ Мошенники подделывают сайты госуслуг — проверяйте адресную строку</div>
+            <div class="news-card">✅ Как не попасться на «выигрыш в лотерею» — памятка внутри</div>
         </div>
     </section>
 </main>
 
 <footer>
+    <p>© 2025 · Развод.Нет · Сделано с заботой о вашей безопасности</p>
     <div class="footer-links">
         <a href="#">Авторы: [Ваше имя] и Андрей</a>
         <a href="#">Политика конфиденциальности</a>
-        <a href="#">Контакты</a>
     </div>
 </footer>
 
